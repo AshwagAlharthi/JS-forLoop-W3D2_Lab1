@@ -1,12 +1,3 @@
-/* 
-
-• باستعمال `for loop` قم بطباعة الاعداد الزوجيه الموجودة في نطاق من 25- الى 0.
-
-• باستعمال `for loop`  احسب تربيع الاعداد من 1 - 10.
-
-• باستعمال `loop` قم بطباعة الاعداد الفردية من 1 - 20 .
-*/ 
-
 // Question No1
 for(let i=0 ; i< 25 ; i++){
     if (i % 2 == 0){
@@ -16,10 +7,12 @@ for(let i=0 ; i< 25 ; i++){
     }
 }
 
+
 // Question No2
 for(let i=0 ; i<=10 ; i++){
     console.log(i * i);
 }
+
 
 // Question No3
 for(let i=0 ; i<20 ; i++){
@@ -29,3 +22,14 @@ for(let i=0 ; i<20 ; i++){
         console.log(i);
     }
 }
+
+
+// Question No4
+let firstNumber = 0, secondNumber = 1, nextNumber;
+for(let i=0 ; i<10 ; i++){
+    console.log(firstNumber);
+    nextNumber = firstNumber + secondNumber;
+    firstNumber = secondNumber;
+    secondNumber = nextNumber;
+}
+
